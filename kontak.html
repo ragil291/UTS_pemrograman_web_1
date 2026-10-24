@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak & Sekretariat - AMPALAN</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-wrapper">
+      <div class="logo-area">
+        <img src="assets/images/logo.svg" alt="Logo AMPALAN">
+        <div>
+          <h1>AMPALAN</h1>
+          <p>Angkatan Muda Pecinta Alam Nusantara</p>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda & Profil</a></li>
+          <li><a href="anggota.html">Data Anggota</a></li>
+          <li><a href="kegiatan.html">Kegiatan & Galeri</a></li>
+          <li><a href="kontak.html" class="active">Kontak & Sekretariat</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="banner">
+      <h2>Hubungi Sekretariat AMPALAN</h2>
+      <p>Silakan kirimkan pertanyaan atau pendaftaran calon anggota baru melalui formulir di bawah ini.</p>
+    </div>
+
+    <section>
+      <h2 class="section-title">Informasi & Lokasi Sekretariat</h2>
+      <div class="profil-content">
+
+        <div class="profil-teks">
+          <p><strong>Alamat Sekretariat:</strong><br>
+          SMK Negeri 1 - Indonesia</p>
+          
+          <p><strong>Kontak Resmi:</strong><br>
+          Telepon / WA: 0812-3456-7890<br>
+          Email: info@ampalan.org</p>
+
+          <p><strong>Jam Piket Sekretariat:</strong><br>
+          Senin - Jumat: 09.00 - 18.00 WIB<br>
+          Sabtu: 09.00 - 14.00 WIB</p>
+        </div>
+
+        <div class="profil-gambar">
+          <img src="assets/images/tanam.jpg" alt="Aksi Penanaman Pohon AMPALAN">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Formulir Pesan / Pendaftaran Anggota</h2>
+      <form action="#" method="post" onsubmit="event.preventDefault(); alert('Pesan Anda berhasil dikirim ke sekretariat AMPALAN!');">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Alamat Email:</label>
+          <input type="email" id="email" name="email" placeholder="contoh: nama@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="divisi">Pilihan Minat Divisi:</label>
+          <select id="divisi" name="divisi" required>
+            <option value="">-- Pilih Salah Satu Divisi --</option>
+            <option value="gunung">Gunung Hutan</option>
+            <option value="panjat">Panjat Tebing</option>
+            <option value="arung">Arung Jeram</option>
+            <option value="konservasi">Konservasi Lingkungan</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan / Alasan Ingin Bergabung:</label>
+          <textarea id="pesan" name="pesan" placeholder="Tuliskan pesan Anda..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Kirim Pesan</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 AMPALAN - Angkatan Muda Pecinta Alam Nusantara.</p>
+      <p>UTS Pemrograman Web 1 | <a href="kontak.html">Kembali ke Atas</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

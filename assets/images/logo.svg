@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b4332" />
+      <stop offset="100%" stop-color="#081c15" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fca311" />
+      <stop offset="100%" stop-color="#e85d04" />
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd166" />
+      <stop offset="100%" stop-color="#d4a373" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Ring -->
+  <circle cx="100" cy="100" r="94" fill="none" stroke="url(#goldRing)" stroke-width="4" />
+  <!-- Inner Background -->
+  <circle cx="100" cy="100" r="88" fill="url(#bgGrad)" />
+  
+  <!-- Sun / Sunrise -->
+  <circle cx="100" cy="85" r="32" fill="url(#sunGrad)" opacity="0.9" />
+  <circle cx="100" cy="85" r="36" fill="none" stroke="#ffd166" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6"/>
+
+  <!-- Mountain Back Layer -->
+  <polygon points="50,135 100,65 150,135" fill="#2d6a4f" opacity="0.85" />
+  <polygon points="100,65 118,90 100,82 82,90" fill="#e9ecef" opacity="0.9" />
+
+  <!-- Mountain Foreground Layers -->
+  <polygon points="25,145 75,78 125,145" fill="#40916c" />
+  <polygon points="75,78 88,100 75,93 62,100" fill="#f8f9fa" />
+
+  <polygon points="90,145 135,88 175,145" fill="#52b788" />
+  <polygon points="135,88 145,106 135,100 125,106" fill="#f8f9fa" />
+
+  <!-- Pine Trees silhouettes -->
+  <polygon points="45,145 52,130 59,145" fill="#1b4332" />
+  <polygon points="62,148 70,128 78,148" fill="#081c15" />
+  <polygon points="122,148 130,128 138,148" fill="#081c15" />
+  <polygon points="142,145 149,132 156,145" fill="#1b4332" />
+
+  <!-- Compass Star at Top -->
+  <path d="M100,16 L103,26 L113,29 L103,32 L100,42 L97,32 L87,29 L97,26 Z" fill="#ffd166" />
+
+  <!-- Badge Banner -->
+  <rect x="25" y="145" width="150" height="26" rx="6" fill="#081c15" stroke="url(#goldRing)" stroke-width="2" />
+  
+  <!-- Text AMPALAN -->
+  <text x="100" y="163" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="16" fill="#ffd166" text-anchor="middle" letter-spacing="3">AMPALAN</text>
+  
+  <!-- Subtext -->
+  <text x="100" y="184" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="8.5" fill="#d8f3dc" text-anchor="middle" letter-spacing="1.5">EST. 1998 • NUSANTARA</text>
+</svg>

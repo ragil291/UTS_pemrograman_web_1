@@ -1,0 +1,312 @@
+/* 1. pengaturan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f4;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* 2. container (pembungkus konten agar rapi di tengah) */
+.container {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* 3. header dan navigasi */
+header {
+  background-color: #1b4332;
+  color: #ffffff;
+  padding: 15px 0;
+  border-bottom: 4px solid #52b788;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-area img {
+  width: 45px;
+  height: 45px;
+}
+
+.logo-area h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.logo-area p {
+  font-size: 0.8rem;
+  color: #d8f3dc;
+}
+
+/* navigasi menggunakan tag <nav>, <ul>, <li>, dan <a> */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #2d6a4f;
+}
+
+nav ul li a.active {
+  background-color: #ffd166;
+  color: #081c15;
+}
+
+/* 4. banner & gambar profil */
+.banner {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #e0e0e0;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.banner h2 {
+  color: #1b4332;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.banner p {
+  color: #555555;
+  font-size: 1rem;
+}
+
+/* 5. section & konten */
+section {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #e0e0e0;
+}
+
+section h2.section-title {
+  color: #1b4332;
+  border-bottom: 2px solid #52b788;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.profil-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profil-teks {
+  flex: 1;
+  min-width: 280px;
+}
+
+.profil-gambar {
+  flex: 1;
+  min-width: 280px;
+}
+
+.profil-gambar img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* 6. komponen card dengan tag <div> */
+.card-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  background-color: #f9fbf9;
+  border: 1px solid #d8e2dc;
+  border-top: 4px solid #2d6a4f;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.card h3 {
+  color: #1b4332;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.92rem;
+  color: #444444;
+}
+
+/* 7. Styling tabel */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+table thead {
+  background-color: #1b4332;
+  color: #ffffff;
+}
+
+table th, table td {
+  border: 1px solid #dddddd;
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8faf8;
+}
+
+table tbody tr:hover {
+  background-color: #eef6f0;
+}
+
+/* badge ID dan status */
+.id-badge {
+  font-family: monospace;
+  font-weight: bold;
+  background-color: #e2e8f0;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #1b4332;
+}
+
+.status-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+.status-badge.inti {
+  background-color: #fef08a;
+  color: #854d0e;
+}
+
+/* 8. formulir kontak */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.form-group textarea {
+  height: 110px;
+  resize: vertical;
+}
+
+.btn-submit {
+  background-color: #1b4332;
+  color: #ffffff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #2d6a4f;
+}
+
+/* 9. Footer Semantik */
+footer {
+  background-color: #081c15;
+  color: #cccccc;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffd166;
+  text-decoration: none;
+}
+
+/* 10. desain responsif */
+@media (max-width: 768px) {
+  .header-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profil-content {
+    flex-direction: column;
+  }
+}
